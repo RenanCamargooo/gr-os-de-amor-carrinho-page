@@ -1,0 +1,32 @@
+<div class="p-6 max-w-3xl mx-auto bg-white rounded-2xl shadow-md">
+  <h2 class="text-2xl font-semibold mb-4">Seu Carrinho ☕</h2>
+
+  <div *ngIf="itens.length === 0" class="text-gray-600">
+    O carrinho está vazio.
+  </div>
+
+  <div *ngIf="itens.length > 0" class="space-y-4">
+    <div *ngFor="let item of itens; let i = index" class="flex items-center justify-between bg-gray-50 p-4 rounded-xl shadow-sm">
+      <div class="flex items-center space-x-4">
+        <img [src]="item.imagem" alt="{{ item.nome }}" class="w-16 h-16 rounded-xl object-cover shadow-sm" />
+        <div>
+          <h3 class="font-semibold text-lg">{{ item.nome }}</h3>
+          <p class="text-gray-500">R$ {{ item.preco.toFixed(2) }}</p>
+        </div>
+      </div>
+      <button (click)="removerItem(i)" class="text-red-500 hover:text-red-700 transition">
+        Remover
+      </button>
+    </div>
+
+    <div class="text-right text-lg font-semibold mt-6">
+      Total: R$ {{ calcularTotal().toFixed(2) }}
+    </div>
+
+    <div class="text-right mt-4">
+      <button (click)="finalizarPedido()" class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-2 px-6 rounded-xl transition">
+        Finalizar Pedido
+      </button>
+    </div>
+  </div>
+</div>

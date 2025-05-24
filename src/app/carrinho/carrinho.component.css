@@ -1,0 +1,25 @@
+.carrinho-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .total {
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  
+  button {
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }

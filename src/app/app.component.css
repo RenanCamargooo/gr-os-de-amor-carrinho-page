@@ -1,0 +1,162 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f1e8;
+  color: #4b2e2e;
+}
+
+header {
+  background-color: #6b4226;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  width: 50px;
+  height: auto;
+}
+
+header nav {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Centraliza o menu */
+  gap: 2rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #d4a373;
+}
+
+main {
+  padding: 15rem;
+  text-align: center;
+}
+
+footer {
+  background-color: #6b4226;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+button {
+    background-color: #000000; 
+    border: 2px solid #964104; 
+    color: #ffffff; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 10px 5px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: 0.3s; 
+}
+
+
+button:hover {
+    background-color: #f87b05e7; 
+    color: #ffffff; 
+    transform: scale(1.05); 
+}
+
+
+.cart-button {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-icon {
+  width: 40px;
+  height: 40px;
+  color: #ffffff; /* Cor do ícone (branco) */
+  transition: transform 0.3s, color 0.3s;
+}
+
+.cart-icon:hover {
+  transform: scale(1.1);
+  color: #d4a373; /* Cor ao passar o mouse */
+}
+
+
+.cart-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #f87b05;
+  color: white;
+  border-radius: 50%;
+  padding: 4px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.carrinho-container {
+  position: relative;
+  display: inline-block;
+}
+
+.icone-carrinho {
+  width: 32px;
+  height: 32px;
+}
+
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+.cart-icon-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.cart-icon {
+  width: 32px;
+  height: 32px;
+  color: #fcfcfc; /* ou branco se o fundo for escuro */
+}
+
+.badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: bold;
+}

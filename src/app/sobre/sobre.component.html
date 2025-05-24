@@ -1,0 +1,43 @@
+<main>
+    <section class="sobre">
+        <h1>{{ titulo }}</h1>
+        <p>{{ descricao }}</p>
+        <p>Nosso propósito é oferecer qualidade, aconchego e um toque de carinho em cada xícara servida.</p>
+
+        <div class="faq">
+            <h2>Perguntas Frequentes</h2>
+
+            <div class="faq-item">
+                <button class="faq-question" (click)="toggleResposta(1)">
+                    Qual é a origem dos nossos grãos?
+                </button>
+                <p *ngIf="respostasVisiveis[1]" class="faq-answer">
+                    Nossos grãos são cultivados de forma sustentável em fazendas certificadas, garantindo qualidade e sabor únicos.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" (click)="toggleResposta(2)">
+                    Temos opções sem cafeína?
+                </button>
+                <p *ngIf="respostasVisiveis[2]" class="faq-answer">
+                    Sim! Oferecemos cafés descafeinados e alternativas como chás e bebidas especiais.
+                </p>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" (click)="toggleResposta(3)">
+                    Como posso entrar em contato com a equipe?
+                </button>
+                <p *ngIf="respostasVisiveis[3]" class="faq-answer">
+                    Você pode entrar em contato pelo nosso e-mail ou redes sociais. Estamos sempre prontos para ajudar!
+                </p>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Grãos de Amor. Todos os direitos reservados.</p>
+</footer>

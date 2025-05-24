@@ -1,0 +1,70 @@
+<div class="cardapio">
+  <h2>Nosso Cardápio</h2>
+  <div class="produtos-container">
+
+    <div class="produto">
+      <img src="assets/cafe-expresso.png" alt="Espresso" />
+      <h3>Espresso</h3>
+      <p>Café forte e concentrado em pequena dose.</p>
+      <span class="preco">R$ 6,00</span>
+      <button (click)="adicionarAoCarrinho({ nome: 'Espresso', preco: 6.00, imagem: 'assets/cafe-expresso.png' })">Adicionar ao carrinho</button>
+    </div>
+
+    <div class="produto">
+      <img src="assets/cappuccino.png" alt="Cappuccino" />
+      <h3>Cappuccino</h3>
+      <p>Café com leite vaporizado e espuma.</p>
+      <span class="preco">R$ 9,00</span>
+      <button (click)="adicionarAoCarrinho({ nome: 'Cappuccino', preco: 9.00, imagem: 'assets/cappuccino.png' })">Adicionar ao carrinho</button>
+    </div>
+
+    <div class="produto">
+      <img src="assets/latte.png" alt="Latte" />
+      <h3>Latte</h3>
+      <p>Café com mais leite que o cappuccino.</p>
+      <span class="preco">R$ 8,00</span>
+      <button (click)="adicionarAoCarrinho({ nome: 'Latte', preco: 8.00, imagem: 'assets/latte.png' })">Adicionar ao carrinho</button>
+    </div>
+
+    <div class="produto">
+      <img src="assets/mocha.png" alt="Mocha" />
+      <h3>Mocha</h3>
+      <p>Latte com calda de chocolate.</p>
+      <span class="preco">R$ 10,00</span>
+      <button (click)="adicionarAoCarrinho({ nome: 'Mocha', preco: 10.00, imagem: 'assets/mocha.png' })">Adicionar ao carrinho</button>
+    </div>
+
+    <div class="produto">
+      <img src="assets/cafe-gelado.png" alt="Café Gelado" />
+      <h3>Café Gelado</h3>
+      <p>Café frio com gelo e açúcar.</p>
+      <span class="preco">R$ 7,00</span>
+      <button (click)="adicionarAoCarrinho({ nome: 'Café Gelado', preco: 7.00, imagem: 'assets/cafe-gelado.png' })">Adicionar ao carrinho</button>
+    </div>
+
+    <div class="produto">
+      <img src="assets/macchiato.png" alt="Macchiato" />
+      <h3>Macchiato</h3>
+      <p>Espresso com um toque de leite.</p>
+      <span class="preco">R$ 7,50</span>
+      <button (click)="adicionarAoCarrinho({ nome: 'Macchiato', preco: 7.50, imagem: 'assets/macchiato.png' })">Adicionar ao carrinho</button>
+    </div>
+
+    <div class="produto">
+      <img src="assets/affogato.png" alt="Affogato" />
+      <h3>Affogato</h3>
+      <p>Bola de sorvete com café quente.</p>
+      <span class="preco">R$ 12,00</span>
+      <button (click)="adicionarAoCarrinho({ nome: 'Affogato', preco: 12.00, imagem: 'assets/affogato.png' })">Adicionar ao carrinho</button>
+    </div>
+
+    <div class="produto">
+      <img src="assets/cafe-canela.png" alt="Café com Canela" />
+      <h3>Café com Canela</h3>
+      <p>Espresso com um toque de canela.</p>
+      <span class="preco">R$ 7,50</span>
+      <button (click)="adicionarAoCarrinho({ nome: 'Café com Canela', preco: 7.50, imagem: 'assets/cafe-canela.png' })">Adicionar ao carrinho</button>
+    </div>
+
+  </div>
+</div>
