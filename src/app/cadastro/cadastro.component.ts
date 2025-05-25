@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   template: `
     <div class="paddings-container">
-      <div class="padding-section" routerLink="/cadastro" style="background-image: url('/assets/Cadastro.png')">
+      <div class="padding-section" routerLink="/login" style="background-image: url('/assets/Cadastro.png')">
         <h2>Vamos</h2>
       </div>
       <div class="padding-section" routerLink="/cardapio" style="background-image: url('/assets/Cardapio.jpeg')">

@@ -3,6 +3,7 @@ import { importProvidersFrom } from '@angular/core';
 import { provideRouter, withDebugTracing } from '@angular/router';
 import { routes } from './app.routes';
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common'; 
 
 export const appConfig = {
   providers: [

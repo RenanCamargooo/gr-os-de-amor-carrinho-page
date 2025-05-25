@@ -1,25 +1,105 @@
 .carrinho-container {
-    padding: 20px;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .item {
-    border-bottom: 1px solid #ddd;
-    padding: 10px 0;
-  }
-  
-  .total {
-    font-weight: bold;
-    margin-top: 15px;
-  }
-  
-  button {
-    margin-top: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+  padding: 24px;
+  max-width: 768px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.carrinho-container h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.2s ease;
+  margin-bottom: 16px;
+}
+
+.item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.item .info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.item img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.item .details h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.item .details p {
+  color: #666;
+  margin-top: 4px;
+}
+
+.item button {
+  background: none;
+  border: none;
+  color: #e53935;
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.item button:hover {
+  color: #b71c1c;
+}
+
+.total {
+  text-align: right;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 24px;
+  border-top: 1px solid #eee;
+  padding-top: 16px;
+}
+
+.finalizar-btn {
+  display: inline-block;
+  background-color: #ffb300;
+  color: #fff;
+  padding: 12px 24px;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 16px;
+  float: right;
+  transition: background-color 0.3s ease;
+}
+
+.finalizar-btn:hover {
+  background-color: #fb8c00;
+}
+
+.vazio {
+  text-align: center;
+  color: #888;
+  font-size: 16px;
+  padding: 20px 0;
+}

@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { Router, RouterOutlet } from '@angular/router';
-import { CarrinhoService } from './services/carrinho.service';
+import { CarrinhoService } from './carrinho/carrinho.service';
+import { CommonModule } from '@angular/common'; 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, CommonModule],  
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
@@ -18,6 +19,6 @@ export class AppComponent {
   }
 
   navegarPara(caminho: string) {
-    this.router.navigate([caminho]);
+    this.router.navigate([caminho]);  
   }
 }

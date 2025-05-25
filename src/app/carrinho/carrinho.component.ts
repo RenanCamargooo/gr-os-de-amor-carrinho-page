@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common'; 
-import { CarrinhoService } from '../services/carrinho.service';
+import { CarrinhoService } from './carrinho.service';
 
 @Component({
   selector: 'app-carrinho',

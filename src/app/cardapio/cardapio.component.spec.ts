@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { CardapioComponent } from './cardapio.component';
+import { CommonModule } from '@angular/common'; 
 
 describe('CardapioComponent', () => {
   let component: CardapioComponent;

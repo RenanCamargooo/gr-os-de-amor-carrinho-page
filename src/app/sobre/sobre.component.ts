@@ -9,13 +9,12 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./sobre.component.css']
 })
 export class SobreComponent {
-  titulo: string = 'Sobre Nós';
-  descricao: string = 'Bem-vindo ao Grãos de Amor! Um espaço criado com paixão pelo café e pela arte de compartilhar momentos especiais.';
-  missao: string = 'Oferecemos qualidade, aconchego e um toque de carinho em cada xícara servida.';
-  valores: string[] = ['Qualidade', 'Acolhimento', 'Amor pelo café', 'Sustentabilidade'];
+  titulo = 'Sobre Nós';
+  descricao = 'Bem-vindo ao Grãos de Amor! Um espaço criado com paixão pelo café e pela arte de compartilhar momentos especiais.';
+  missao = 'Oferecemos qualidade, aconchego e um toque de carinho em cada xícara servida.';
+  valores = ['Qualidade', 'Acolhimento', 'Amor pelo café', 'Sustentabilidade'];
 
-  // Gerenciamento de visibilidade das respostas
-  respostasVisiveis: { [key: number]: boolean } = {};
+  respostasVisiveis: Record<number, boolean> = {};
 
   constructor() {}
 
