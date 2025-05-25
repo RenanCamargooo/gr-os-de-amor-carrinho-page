@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router, RouterOutlet } from '@angular/router';
-import { CarrinhoService } from './carrinho/carrinho.service';
+import { CarrinhoService } from './services/carrinho.service';
 import { CommonModule } from '@angular/common'; 
 
 @Component({
@@ -15,7 +15,10 @@ export class AppComponent {
   quantidadeCarrinho = 0;
 
   constructor(private router: Router, private carrinhoService: CarrinhoService) {
-    this.quantidadeCarrinho = this.carrinhoService.obterItens().length;
+    // Observa quantidade dinamicamente
+    this.carrinhoService.quantidade$.subscribe(qtd => {
+      this.quantidadeCarrinho = qtd;
+    });
   }
 
   navegarPara(caminho: string) {

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { CarrinhoService } from '../carrinho/carrinho.service';
-import { CommonModule } from '@angular/common'; 
+import { Router } from '@angular/router';
+import { CarrinhoService } from '../services/carrinho.service';
 
 @Component({
   selector: 'app-cardapio',
@@ -59,10 +59,13 @@ export class CardapioComponent {
     },
   ];
 
-  constructor(private carrinhoService: CarrinhoService) {}
+  constructor(
+    private carrinhoService: CarrinhoService,
+    private router: Router
+  ) {}
 
   adicionarAoCarrinho(produto: any) {
     this.carrinhoService.adicionarItem(produto);
-    alert(`${produto.nome} adicionado ao carrinho!`);
+    this.router.navigate(['/carrinho']); // Redireciona para o carrinho
   }
 }
